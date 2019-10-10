@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel = "stylesheet" type = "text/css" href = "../src/index.css" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+
+    <title>NBA Player Search</title>
+  </head>
+  <body>
+    
+    
+    
+    <!--
+          http://port-3001.test-tahzibsunesara1126220.codeanyapp.com/ or http://port-3001.test-tahzibsunesara1126220.codeanyapp.co/
+          https://nba-players.herokuapp.com/
+          https://nba-players.herokuapp.com/players/Harden/James
+
+          to get a players games do https://www.balldontlie.io/api/v1/stats?seasons[]=2018&seasons[]=2019&player_ids[]=192  in this case id is james harden
+          to get a players season averages do https://www.balldontlie.io/api/v1/season_averages?season=2018&player_ids[]=192 also james harden 
+
+          for the stats/player avg pop up fetch the data in the app component when view stats button is clicked then pass the data as props to another component called statswindow
+          and wrap the stats window inside the modal component. 
+          <modal>
+            <statswindow />
+          </modal>
+               
+           for tabular data of games https://www.npmjs.com/package/react-super-responsive-table  or         https://react-bootstrap.github.io/components/table/
+    -->
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="logo">
+        <img src = "nbalogo.png" width = "1050" height = "650"  class = "responsiveImg">
+    </div>
+ 
+    <h1 class = "title">NBA Player Finder</h1>
+    <p class = "title">Search for an NBA player to display their information,stats, and past games.</p>
+    <div id="root"></div>
+
+  </body>
+</html>
