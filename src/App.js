@@ -71,8 +71,10 @@ class App extends React.Component {
       })
       .then(jsonD => {
 
+
+
         this.playerArray = jsonD.data.map(player => {
-          
+
           return <Card 
           name = {player.first_name + " " + player.last_name} 
           id = {player.id}

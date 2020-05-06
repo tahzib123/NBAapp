@@ -3,7 +3,8 @@ import './Card.css';
 
 
 const Card = ({name,id,team, position,height,weight,imageLink, showModal}) => {
-  if (position == null){
+  if ( {position} == null || {weight} == null ){
+    console.log("Position is null");
     imageLink = 'questionmark.png';
   }
 
@@ -11,8 +12,8 @@ const Card = ({name,id,team, position,height,weight,imageLink, showModal}) => {
     <div className = "outerGrid">
       <div className = "div1">
     
-         <div className = "div3">
-          <img src = {imageLink} alt = "Player Profile"/>
+         <div className = "div3">          
+          <img src = {imageLink}  alt = "Player Profile"/>
          </div>
          <div className = "div4">
            <h1 className = "Name">{name}</h1>
@@ -21,6 +22,7 @@ const Card = ({name,id,team, position,height,weight,imageLink, showModal}) => {
           
      </div>
     
+
 
       <div className = "div2">
         <div className = "div5">

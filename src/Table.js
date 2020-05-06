@@ -12,14 +12,14 @@ const Table = ({playerGames}) => {
               <td>{game.ast}</td>
               <td>{game.reb}</td>
               <td>{game.blk}</td>
-              <td>{(game.fg_pct) + "%"}</td>
+              <td>{`${(game.fg_pct * 100).toFixed(1)}%`}</td>
             </tr>  
           );
   
     })
    
   return(
-    <table cellpadding="0" cellspacing="0" border="0">
+    <table cellPadding="0" cellSpacing="0" border="0">
       <thead className = "tbl-header">
         <tr>
           <th>Points</th>

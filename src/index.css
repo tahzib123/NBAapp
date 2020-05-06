@@ -13,7 +13,7 @@ body{
 }
 
 h1{
-  font-family: 'Times New Roman';
+
   font-size: 1.3rem;
   color:var(--headerFont);
   font-weight: 600; 
